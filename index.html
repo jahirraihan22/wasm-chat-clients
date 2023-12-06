@@ -59,7 +59,7 @@
             socket.send(JSON.stringify(data))
         }
         document.addEventListener("DOMContentLoaded",function (){
-            socket = new ReconnectingWebSocket("wss://jahirraihan22.github.io/ws-server/",null,{ debug:true,reconnectInterval: 3000 });
+            socket = new ReconnectingWebSocket("wss://jahirraihan22.github.io/ws-server",null,{ debug:true,reconnectInterval: 3000 });
             socket.onopen = () => {
                 status.innerHTML = "<span class='badge bg-success'>Online</span>";
             }
