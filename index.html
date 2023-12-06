@@ -70,7 +70,7 @@
 
             socket.onerror = (error) => {
                 status.innerHTML = "<span class='badge bg-danger'>Offline</span>";
-                console.log("Error "+error);
+                console.log("Error "+error.value);
             }
 
             socket.onmessage = msg => {
